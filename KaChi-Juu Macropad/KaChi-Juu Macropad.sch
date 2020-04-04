@@ -763,32 +763,20 @@ Connection ~ 5600 3250
 Wire Wire Line
 	5100 2600 5600 2600
 Connection ~ 5600 2600
-Text GLabel 3400 2000 2    50   Input ~ 0
+Text GLabel 3400 1600 2    50   Input ~ 0
 ROW0
-Text GLabel 3400 2300 2    50   Input ~ 0
+Text GLabel 4000 4300 2    50   Input ~ 0
 COL0
-Text GLabel 3400 2600 2    50   Input ~ 0
+Text GLabel 3400 1500 2    50   Input ~ 0
 ROW1
-Text GLabel 3400 2900 2    50   Input ~ 0
+Text GLabel 4000 4200 2    50   Input ~ 0
 COL1
-Text GLabel 3400 1800 2    50   Input ~ 0
+Text GLabel 3400 1400 2    50   Input ~ 0
 ROW2
-Text GLabel 3400 3200 2    50   Input ~ 0
+Text GLabel 4000 4000 2    50   Input ~ 0
 ROW3
-Text GLabel 3400 4100 2    50   Input ~ 0
+Text GLabel 4000 4100 2    50   Input ~ 0
 ROW4
-Wire Wire Line
-	3200 1800 3400 1800
-Wire Wire Line
-	3200 2000 3400 2000
-Wire Wire Line
-	3200 2300 3400 2300
-Wire Wire Line
-	3200 2600 3400 2600
-Wire Wire Line
-	3200 2900 3400 2900
-Wire Wire Line
-	3200 3200 3400 3200
 Wire Wire Line
 	3200 3800 3400 3800
 $Comp
@@ -895,22 +883,46 @@ Text GLabel 3400 3900 2    50   Input ~ 0
 SCL
 Wire Wire Line
 	3400 3900 3200 3900
-Wire Wire Line
-	3200 4100 3400 4100
-Text GLabel 3400 2700 2    50   Input ~ 0
+Text GLabel 3750 4500 3    50   Input ~ 0
 SCLK
-Wire Wire Line
-	3400 2700 3200 2700
-Text GLabel 3400 3000 2    50   Input ~ 0
+Text GLabel 3450 4500 3    50   Input ~ 0
 MISO
-Wire Wire Line
-	3400 3000 3200 3000
-Text GLabel 3400 1600 2    50   Input ~ 0
+Text GLabel 3600 4500 3    50   Input ~ 0
 MOSI
-Wire Wire Line
-	3400 1600 3200 1600
-Text GLabel 3400 1400 2    50   Input ~ 0
+Text GLabel 3900 4500 3    50   Input ~ 0
 NRST
 Wire Wire Line
+	4000 4100 3750 4100
+Wire Wire Line
+	4000 4000 3900 4000
+Wire Wire Line
+	3200 4300 3450 4300
+Wire Wire Line
+	3450 4500 3450 4300
+Connection ~ 3450 4300
+Wire Wire Line
+	3450 4300 4000 4300
+Wire Wire Line
+	3200 4200 3600 4200
+Wire Wire Line
+	3600 4500 3600 4200
+Connection ~ 3600 4200
+Wire Wire Line
+	3600 4200 4000 4200
+Wire Wire Line
+	3750 4500 3750 4100
+Connection ~ 3750 4100
+Wire Wire Line
+	3750 4100 3200 4100
+Wire Wire Line
+	3900 4500 3900 4000
+Connection ~ 3900 4000
+Wire Wire Line
+	3900 4000 3200 4000
+Wire Wire Line
 	3400 1400 3200 1400
+Wire Wire Line
+	3200 1500 3400 1500
+Wire Wire Line
+	3400 1600 3200 1600
 $EndSCHEMATC
