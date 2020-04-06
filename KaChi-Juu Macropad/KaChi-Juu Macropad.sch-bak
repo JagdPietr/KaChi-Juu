@@ -996,4 +996,66 @@ Text GLabel 3450 2100 2    50   Input ~ 0
 RGB
 Wire Wire Line
 	3450 2100 3200 2100
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5E948875
+P 1350 7200
+F 0 "J4" H 1322 7082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 1322 7173 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1350 7200 50  0001 C CNN
+F 3 "~" H 1350 7200 50  0001 C CNN
+	1    1350 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5E94996C
+P 650 7000
+F 0 "#PWR018" H 650 6750 50  0001 C CNN
+F 1 "GND" H 655 6827 50  0000 C CNN
+F 2 "" H 650 7000 50  0001 C CNN
+F 3 "" H 650 7000 50  0001 C CNN
+	1    650  7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  7100 0    50   Input ~ 0
+D+
+Text GLabel 950  7200 0    50   Input ~ 0
+D-
+Wire Wire Line
+	650  7000 1150 7000
+Wire Wire Line
+	950  7100 1150 7100
+Wire Wire Line
+	950  7200 1150 7200
+NoConn ~ 3200 1700
+NoConn ~ 3200 1800
+NoConn ~ 3200 1900
+NoConn ~ 3200 2000
+NoConn ~ 3200 2300
+NoConn ~ 3200 2400
+NoConn ~ 3200 2600
+NoConn ~ 3200 2700
+NoConn ~ 3200 2800
+NoConn ~ 3200 2900
+NoConn ~ 3200 3000
+NoConn ~ 3200 3100
+NoConn ~ 3200 3200
+NoConn ~ 3200 3300
+NoConn ~ 2000 2000
+NoConn ~ 3200 3600
+Wire Wire Line
+	950  7300 1150 7300
+NoConn ~ 4250 1500
+$Comp
+L power:VCC #PWR?
+U 1 1 5E907BBB
+P 950 7300
+F 0 "#PWR?" H 950 7150 50  0001 C CNN
+F 1 "VCC" H 967 7473 50  0000 C CNN
+F 2 "" H 950 7300 50  0001 C CNN
+F 3 "" H 950 7300 50  0001 C CNN
+	1    950  7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

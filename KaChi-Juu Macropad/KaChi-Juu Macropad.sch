@@ -1022,14 +1022,40 @@ Text GLabel 950  7100 0    50   Input ~ 0
 D+
 Text GLabel 950  7200 0    50   Input ~ 0
 D-
-Text GLabel 950  7300 0    50   Input ~ 0
-VCC
 Wire Wire Line
 	650  7000 1150 7000
 Wire Wire Line
 	950  7100 1150 7100
 Wire Wire Line
 	950  7200 1150 7200
+NoConn ~ 3200 1700
+NoConn ~ 3200 1800
+NoConn ~ 3200 1900
+NoConn ~ 3200 2000
+NoConn ~ 3200 2300
+NoConn ~ 3200 2400
+NoConn ~ 3200 2600
+NoConn ~ 3200 2700
+NoConn ~ 3200 2800
+NoConn ~ 3200 2900
+NoConn ~ 3200 3000
+NoConn ~ 3200 3100
+NoConn ~ 3200 3200
+NoConn ~ 3200 3300
+NoConn ~ 2000 2000
+NoConn ~ 3200 3600
 Wire Wire Line
 	950  7300 1150 7300
+NoConn ~ 4250 1500
+$Comp
+L power:VCC #PWR0105
+U 1 1 5E907BBB
+P 950 7300
+F 0 "#PWR0105" H 950 7150 50  0001 C CNN
+F 1 "VCC" H 967 7473 50  0000 C CNN
+F 2 "" H 950 7300 50  0001 C CNN
+F 3 "" H 950 7300 50  0001 C CNN
+	1    950  7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
