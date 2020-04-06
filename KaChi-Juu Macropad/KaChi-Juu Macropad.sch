@@ -926,10 +926,10 @@ Wire Wire Line
 Wire Wire Line
 	3400 1600 3200 1600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5E8E4E3D
 P 4350 1100
-F 0 "#PWR?" H 4350 850 50  0001 C CNN
+F 0 "#PWR0101" H 4350 850 50  0001 C CNN
 F 1 "GND" H 4355 927 50  0000 C CNN
 F 2 "" H 4350 1100 50  0001 C CNN
 F 3 "" H 4350 1100 50  0001 C CNN
@@ -938,4 +938,98 @@ F 3 "" H 4350 1100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 1100 4350 1100
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5E928F12
+P 1400 5450
+F 0 "J3" H 1372 5332 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 1372 5423 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1400 5450 50  0001 C CNN
+F 3 "~" H 1400 5450 50  0001 C CNN
+	1    1400 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E92D6C0
+P 750 5250
+F 0 "#PWR0102" H 750 5000 50  0001 C CNN
+F 1 "GND" H 755 5077 50  0000 C CNN
+F 2 "" H 750 5250 50  0001 C CNN
+F 3 "" H 750 5250 50  0001 C CNN
+	1    750  5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E92DD01
+P 750 5550
+F 0 "#PWR0103" H 750 5300 50  0001 C CNN
+F 1 "GND" H 755 5377 50  0000 C CNN
+F 2 "" H 750 5550 50  0001 C CNN
+F 3 "" H 750 5550 50  0001 C CNN
+	1    750  5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  5250 1200 5250
+Wire Wire Line
+	750  5550 1200 5550
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E935EC7
+P 1000 5350
+F 0 "#PWR0104" H 1000 5200 50  0001 C CNN
+F 1 "+5V" H 1015 5523 50  0000 C CNN
+F 2 "" H 1000 5350 50  0001 C CNN
+F 3 "" H 1000 5350 50  0001 C CNN
+	1    1000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5350 1200 5350
+Text GLabel 1050 5450 0    50   Input ~ 0
+RGB
+Wire Wire Line
+	1050 5450 1200 5450
+Text GLabel 3450 2100 2    50   Input ~ 0
+RGB
+Wire Wire Line
+	3450 2100 3200 2100
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5E948875
+P 1350 7200
+F 0 "J4" H 1322 7082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 1322 7173 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1350 7200 50  0001 C CNN
+F 3 "~" H 1350 7200 50  0001 C CNN
+	1    1350 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5E94996C
+P 650 7000
+F 0 "#PWR018" H 650 6750 50  0001 C CNN
+F 1 "GND" H 655 6827 50  0000 C CNN
+F 2 "" H 650 7000 50  0001 C CNN
+F 3 "" H 650 7000 50  0001 C CNN
+	1    650  7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  7100 0    50   Input ~ 0
+D+
+Text GLabel 950  7200 0    50   Input ~ 0
+D-
+Text GLabel 950  7300 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	650  7000 1150 7000
+Wire Wire Line
+	950  7100 1150 7100
+Wire Wire Line
+	950  7200 1150 7200
+Wire Wire Line
+	950  7300 1150 7300
 $EndSCHEMATC
