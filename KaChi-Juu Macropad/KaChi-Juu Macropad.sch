@@ -996,38 +996,6 @@ Text GLabel 3450 2100 2    50   Input ~ 0
 RGB
 Wire Wire Line
 	3450 2100 3200 2100
-$Comp
-L Connector:Conn_01x04_Male J4
-U 1 1 5E948875
-P 1350 7200
-F 0 "J4" H 1322 7082 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 1322 7173 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1350 7200 50  0001 C CNN
-F 3 "~" H 1350 7200 50  0001 C CNN
-	1    1350 7200
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5E94996C
-P 650 7000
-F 0 "#PWR018" H 650 6750 50  0001 C CNN
-F 1 "GND" H 655 6827 50  0000 C CNN
-F 2 "" H 650 7000 50  0001 C CNN
-F 3 "" H 650 7000 50  0001 C CNN
-	1    650  7000
-	1    0    0    -1  
-$EndComp
-Text GLabel 950  7100 0    50   Input ~ 0
-D+
-Text GLabel 950  7200 0    50   Input ~ 0
-D-
-Wire Wire Line
-	650  7000 1150 7000
-Wire Wire Line
-	950  7100 1150 7100
-Wire Wire Line
-	950  7200 1150 7200
 NoConn ~ 3200 1700
 NoConn ~ 3200 1800
 NoConn ~ 3200 1900
@@ -1044,18 +1012,295 @@ NoConn ~ 3200 3200
 NoConn ~ 3200 3300
 NoConn ~ 2000 2000
 NoConn ~ 3200 3600
-Wire Wire Line
-	950  7300 1150 7300
 NoConn ~ 4250 1500
 $Comp
-L power:VCC #PWR0105
-U 1 1 5E907BBB
-P 950 7300
-F 0 "#PWR0105" H 950 7150 50  0001 C CNN
-F 1 "VCC" H 967 7473 50  0000 C CNN
-F 2 "" H 950 7300 50  0001 C CNN
-F 3 "" H 950 7300 50  0001 C CNN
-	1    950  7300
+L LED:WS2812B D?
+U 1 1 5E9851C9
+P 3300 6750
+F 0 "D?" H 3644 6796 50  0000 L CNN
+F 1 "WS2812B" H 3644 6705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3350 6450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3400 6375 50  0001 L TNN
+	1    3300 6750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5E988746
+P 5550 1000
+F 0 "J?" H 5607 1467 50  0000 C CNN
+F 1 "USB_B_Micro" H 5607 1376 50  0000 C CNN
+F 2 "" H 5700 950 50  0001 C CNN
+F 3 "~" H 5700 950 50  0001 C CNN
+	1    5550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E98F420
+P 6100 800
+F 0 "#PWR?" H 6100 650 50  0001 C CNN
+F 1 "VCC" H 6117 973 50  0000 C CNN
+F 2 "" H 6100 800 50  0001 C CNN
+F 3 "" H 6100 800 50  0001 C CNN
+	1    6100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5E98F719
+P 6400 800
+F 0 "F?" V 6195 800 50  0000 C CNN
+F 1 "500mA" V 6286 800 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6450 600 50  0001 L CNN
+F 3 "~" H 6400 800 50  0001 C CNN
+	1    6400 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E98FCCE
+P 6650 800
+F 0 "#PWR?" H 6650 650 50  0001 C CNN
+F 1 "+5V" H 6665 973 50  0000 C CNN
+F 2 "" H 6650 800 50  0001 C CNN
+F 3 "" H 6650 800 50  0001 C CNN
+	1    6650 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 800  6100 800 
+Wire Wire Line
+	6500 800  6650 800 
+Connection ~ 6100 800 
+Wire Wire Line
+	6100 800  6300 800 
+Text GLabel 6100 1000 2    50   Input ~ 0
+D+
+Text GLabel 6100 1100 2    50   Input ~ 0
+D-
+Wire Wire Line
+	5850 1000 6100 1000
+Wire Wire Line
+	5850 1100 6100 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5E99F716
+P 5550 1500
+F 0 "#PWR?" H 5550 1250 50  0001 C CNN
+F 1 "GND" H 5555 1327 50  0000 C CNN
+F 2 "" H 5550 1500 50  0001 C CNN
+F 3 "" H 5550 1500 50  0001 C CNN
+	1    5550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1400 5550 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9A5C7C
+P 7100 750
+F 0 "#PWR?" H 7100 600 50  0001 C CNN
+F 1 "+5V" H 7115 923 50  0000 C CNN
+F 2 "" H 7100 750 50  0001 C CNN
+F 3 "" H 7100 750 50  0001 C CNN
+	1    7100 750 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 950  0    50   Input ~ 0
+D+
+Text GLabel 7100 850  0    50   Input ~ 0
+D-
+Text GLabel 6100 1200 2    50   Input ~ 0
+ID
+Wire Wire Line
+	6100 1200 5850 1200
+Text GLabel 7100 1050 0    50   Input ~ 0
+ID
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 5E9ABB04
+P 7600 950
+F 0 "J?" H 7628 926 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 7628 835 50  0000 L CNN
+F 2 "" H 7600 950 50  0001 C CNN
+F 3 "~" H 7600 950 50  0001 C CNN
+	1    7600 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 750  7400 750 
+Wire Wire Line
+	7100 850  7400 850 
+Wire Wire Line
+	7100 950  7400 950 
+Wire Wire Line
+	7100 1050 7400 1050
+Wire Wire Line
+	5450 1400 5550 1400
+Connection ~ 5550 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E9C687C
+P 7100 1150
+F 0 "#PWR?" H 7100 900 50  0001 C CNN
+F 1 "GND" H 7105 977 50  0000 C CNN
+F 2 "" H 7100 1150 50  0001 C CNN
+F 3 "" H 7100 1150 50  0001 C CNN
+	1    7100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1150 7400 1150
+Wire Wire Line
+	7400 1250 7400 1150
+Connection ~ 7400 1150
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9D1ACD
+P 3400 6450
+F 0 "#PWR?" H 3400 6300 50  0001 C CNN
+F 1 "+5V" H 3415 6623 50  0000 C CNN
+F 2 "" H 3400 6450 50  0001 C CNN
+F 3 "" H 3400 6450 50  0001 C CNN
+	1    3400 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6450 3400 6450
+$Comp
+L power:GND #PWR?
+U 1 1 5E9D74CC
+P 3200 7050
+F 0 "#PWR?" H 3200 6800 50  0001 C CNN
+F 1 "GND" H 3205 6877 50  0000 C CNN
+F 2 "" H 3200 7050 50  0001 C CNN
+F 3 "" H 3200 7050 50  0001 C CNN
+	1    3200 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7050 3300 7050
+Text GLabel 2900 6750 0    50   Input ~ 0
+AVR
+Wire Wire Line
+	2900 6750 3000 6750
+$Comp
+L LED:WS2812B D?
+U 1 1 5E9F0C17
+P 4350 6750
+F 0 "D?" H 4694 6796 50  0000 L CNN
+F 1 "WS2812B" H 4694 6705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4400 6450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4450 6375 50  0001 L TNN
+	1    4350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5E9F1A24
+P 5300 6750
+F 0 "D?" H 5644 6796 50  0000 L CNN
+F 1 "WS2812B" H 5644 6705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5350 6450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5400 6375 50  0001 L TNN
+	1    5300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6750 4050 6750
+Wire Wire Line
+	4650 6750 5000 6750
+$Comp
+L LED:WS2812B D?
+U 1 1 5E9FDDCA
+P 6150 6750
+F 0 "D?" H 6494 6796 50  0000 L CNN
+F 1 "WS2812B" H 6494 6705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6200 6450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6250 6375 50  0001 L TNN
+	1    6150 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 6750 5850 6750
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA041AF
+P 4450 6450
+F 0 "#PWR?" H 4450 6300 50  0001 C CNN
+F 1 "+5V" H 4465 6623 50  0000 C CNN
+F 2 "" H 4450 6450 50  0001 C CNN
+F 3 "" H 4450 6450 50  0001 C CNN
+	1    4450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA04761
+P 5400 6450
+F 0 "#PWR?" H 5400 6300 50  0001 C CNN
+F 1 "+5V" H 5415 6623 50  0000 C CNN
+F 2 "" H 5400 6450 50  0001 C CNN
+F 3 "" H 5400 6450 50  0001 C CNN
+	1    5400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA04D8A
+P 6250 6450
+F 0 "#PWR?" H 6250 6300 50  0001 C CNN
+F 1 "+5V" H 6265 6623 50  0000 C CNN
+F 2 "" H 6250 6450 50  0001 C CNN
+F 3 "" H 6250 6450 50  0001 C CNN
+	1    6250 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA050F3
+P 4250 7050
+F 0 "#PWR?" H 4250 6800 50  0001 C CNN
+F 1 "GND" H 4255 6877 50  0000 C CNN
+F 2 "" H 4250 7050 50  0001 C CNN
+F 3 "" H 4250 7050 50  0001 C CNN
+	1    4250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA05660
+P 5200 7050
+F 0 "#PWR?" H 5200 6800 50  0001 C CNN
+F 1 "GND" H 5205 6877 50  0000 C CNN
+F 2 "" H 5200 7050 50  0001 C CNN
+F 3 "" H 5200 7050 50  0001 C CNN
+	1    5200 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA05AA7
+P 6050 7050
+F 0 "#PWR?" H 6050 6800 50  0001 C CNN
+F 1 "GND" H 6055 6877 50  0000 C CNN
+F 2 "" H 6050 7050 50  0001 C CNN
+F 3 "" H 6050 7050 50  0001 C CNN
+	1    6050 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 7050 6050 7050
+Wire Wire Line
+	5300 7050 5200 7050
+Wire Wire Line
+	4350 7050 4250 7050
+Wire Wire Line
+	4350 6450 4450 6450
+Wire Wire Line
+	5300 6450 5400 6450
+Wire Wire Line
+	6150 6450 6250 6450
+NoConn ~ 6450 6750
 $EndSCHEMATC
