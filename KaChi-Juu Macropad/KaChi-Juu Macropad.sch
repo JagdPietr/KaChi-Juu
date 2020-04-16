@@ -907,17 +907,6 @@ F 3 "" H 5550 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 1400 5550 1500
-$Comp
-L power:+5V #PWR018
-U 1 1 5E9A5C7C
-P 8650 750
-F 0 "#PWR018" H 8650 600 50  0001 C CNN
-F 1 "+5V" H 8665 923 50  0000 C CNN
-F 2 "" H 8650 750 50  0001 C CNN
-F 3 "" H 8650 750 50  0001 C CNN
-	1    8650 750 
-	1    0    0    -1  
-$EndComp
 Text GLabel 8650 950  2    50   Input ~ 0
 D+
 Text GLabel 8650 850  2    50   Input ~ 0
@@ -1172,4 +1161,19 @@ Wire Wire Line
 Wire Wire Line
 	8250 1250 8650 1250
 Connection ~ 8250 1250
+Text GLabel 8650 750  2    50   Input ~ 0
+VCC
+Text GLabel 6100 850  2    50   Input ~ 0
+VCC
+Wire Wire Line
+	6100 850  6100 800 
+NoConn ~ 3200 1400
+NoConn ~ 3200 1500
+NoConn ~ 3200 1600
+NoConn ~ 3200 2100
+NoConn ~ 3200 3100
+NoConn ~ 3200 4000
+NoConn ~ 3200 4100
+NoConn ~ 3200 4200
+NoConn ~ 3200 4300
 $EndSCHEMATC
